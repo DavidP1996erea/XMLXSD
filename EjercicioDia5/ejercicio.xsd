@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="pruebasDia5">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ClienteBanco" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="Saldo"/>
+                            <xs:element ref="Premium"/>
+                            <xs:element ref="FechaAlta"/>
+                            <xs:element ref="Nombre"/>
+                            <xs:element ref="FechaNacimiento"/>
+                            <xs:element ref="HoraCita"/>
+                            <xs:element ref="NumeroCuenta"/>
+                            <xs:element ref="Edad"/>
+                            <xs:element ref="IBAN"/>
+                            <xs:element ref="Familiares"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="Saldo" type="xs:decimal"/>
+    <xs:element name="Premium" type="xs:boolean"/>
+    <xs:element name="FechaAlta" type="xs:dateTime"/>
+    <xs:element name="Nombre" type="xs:string"/>
+    <xs:element name="FechaNacimiento" type="xs:date"/>
+    <xs:element name="HoraCita" type="xs:time"/>
+    <xs:element name="NumeroCuenta" type="xs:integer"/>
+    <xs:element name="Edad" type="xs:positiveInteger"/>
+    <xs:element name="IBAN" type="xs:long"/>
+    <xs:element name="Familiares" type="xs:short"/>
+
+</xs:schema>

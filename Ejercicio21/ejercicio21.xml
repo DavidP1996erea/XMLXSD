@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Colegio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ejercicio21.xsd">
+    <DatosAlumnos>
+        <nombre>David</nombre>
+        <apellidos>Perea García</apellidos>
+        <edad>25</edad>
+        <Repetidor></Repetidor>
+    </DatosAlumnos>
+</Colegio>
+
+        <!--
+            Ejemplo 1: Un número entre 1 y 10.
+            Ejemplo 2: Valores de longitud mínima y máxima de una palabra entre 1 y 4
+            Ejemplo 3: Un número de un total de 4 dígitos y dos decimales.
+            Ejemplo 4: Valor fijo de longitud de una palabra.
+            Ejemplo 5: Da una lista de los valores permitidos que se pueden poner.
+        -->

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Colegio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ejercicio20.xsd">
+    <DatosAlumnos>
+        <nombre>David</nombre>
+        <apellidos>Perea García</apellidos>
+        <edad>25</edad>
+        <Repetidor></Repetidor>
+    </DatosAlumnos>
+</Colegio>
+
+        <!--
+         xs:annotation:
+            - id -> Es opcional y sirve para relacionar un elemento con un id único
+            - any attributes -> Sirve para añadir otros atributos que no sea de esquema
+
+         xs:appinfo:
+            - source -> Especifica el origen de la información de la aplicación
+
+         xs:documentation:
+            - source -> Igual que la anterior
+            - xml:lang -> Nos dice el idioma usado en los contenidos
+
+        -->

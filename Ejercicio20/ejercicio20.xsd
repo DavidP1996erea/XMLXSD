@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:annotation>
+        <xs:documentation xml:lang="en">
+            Este Schema muestra los datos de ciertos alumnos
+        </xs:documentation>
+    </xs:annotation>
+
+
+    <xs:element name="Colegio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="DatosAlumnos" maxOccurs="unbounded">
+
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="nombre">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en">
+                                        Este atributo pertenece al nombre del alumno.
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element ref="apellidos"/>
+                            <xs:element ref="edad"/>
+                            <xs:choice>
+                                <xs:element ref="Repetidor" />
+                                <xs:element ref="NoRepetidor" />
+                            </xs:choice>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="nombre" type="xs:string"/>
+    <xs:element name="apellidos" type="xs:string"/>
+    <xs:element name="edad" type="xs:integer"/>
+    <xs:element name="Repetidor" fixed="" />
+    <xs:element name="NoRepetidor" fixed="" />
+</xs:schema>

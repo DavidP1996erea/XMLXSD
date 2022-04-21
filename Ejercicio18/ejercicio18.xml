@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Colegio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="ejercicio18.xsd">
+    <DatosAlumnos>
+        <nombre>David</nombre>
+        <apellidos>Perea García</apellidos>
+        <edad>25</edad>
+        <Repetidor></Repetidor>
+    </DatosAlumnos>
+</Colegio>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pizarra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="pizarra.xsd">
+    <DatosAlumnos>
+        <DNI>15892125G</DNI>
+        <tlf>601265306</tlf>
+        <Email>davidp1421@gmail.com</Email>
+        <Edad>19</Edad>
+    </DatosAlumnos>
+</pizarra>
+

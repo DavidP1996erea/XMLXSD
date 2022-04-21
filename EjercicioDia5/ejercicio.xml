@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pruebasDia5 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="ejercicio.xsd">
+    <ClienteBanco>
+        <Saldo>1256.29</Saldo>
+        <Premium>0</Premium>
+        <FechaAlta>2015-05-15T14:12:11</FechaAlta>
+        <Nombre>David</Nombre>
+        <FechaNacimiento>1996-09-06</FechaNacimiento>
+        <HoraCita>08:14:55</HoraCita>
+        <NumeroCuenta>484189</NumeroCuenta>
+        <Edad>26</Edad>
+        <IBAN>6849841654946814</IBAN>
+        <Familiares>6</Familiares>
+    </ClienteBanco>
+</pruebasDia5>

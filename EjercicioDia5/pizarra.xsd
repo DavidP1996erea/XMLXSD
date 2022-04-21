@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="pizarra">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="DatosAlumnos" maxOccurs="unbounded">
+
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="DNI"/>
+                            <xs:element ref="tlf"/>
+                            <xs:element ref="Email"/>
+                            <xs:element ref="Edad"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="DNI" type="DNIRestri"/>
+    <xs:element name="tlf" type="tlfRestri"/>
+    <xs:element name="Email" type="EmailRestri" />
+    <xs:element name="Edad" type="edadRestri" />
+    <xs:simpleType name="edadRestri">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="18"/>
+            <xs:maxInclusive value="99"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="DNIRestri">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d\d\d\d\d\d\d\d[A-Z]">
+            </xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tlfRestri">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[6|7]\d{8}">
+            </xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="EmailRestri">
+        <xs:restriction base="xs:string">
+            <xs:pattern value=".+[@].+[.].+">
+            </xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+</xs:schema>
