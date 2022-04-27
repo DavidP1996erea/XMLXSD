@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<centroMalaga xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="prueba3.xsd">
+
+    <calificaciones>
+        <Datos>
+            <Nombre>David</Nombre>
+            <Apellidos>Perea Garcia</Apellidos>
+        </Datos>
+        <Materia>
+            <OACE>
+                <Cuestionario>9</Cuestionario>
+                <Tareas>7</Tareas>
+            </OACE>
+            <EEE>
+                <Cuestionario>5</Cuestionario>
+                <Tareas>2</Tareas>
+            </EEE>
+        </Materia>
+    </calificaciones>
+
+</centroMalaga>
